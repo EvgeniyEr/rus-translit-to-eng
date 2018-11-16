@@ -1,0 +1,147 @@
+$color: #2e2e2e;
+$color-light: #575757;
+$border-radius: 0.25rem !default;
+
+@mixin border {
+  border: 1px solid #d2d2d2;
+  border-radius: $border-radius;
+}
+
+.form__group {
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.form__label-group {
+  padding: 0.3rem 0 0.3rem 0.4rem;
+  cursor: pointer;
+}
+
+.form__label {
+  display: inline-block;
+  color: $color-light;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  &_font_normal {
+    font-weight: normal;
+    color: $color;
+  }
+  &_checkbox {
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}
+
+.form__error-msg {
+  display: inline-block;
+  padding-left: 1rem;
+  color: red;
+}
+
+.form__input {
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: $color;
+  @include border;
+
+  &_error {
+    border-color: #ff5020;
+    background: #ffdcd2;
+    &:focus {
+      outline: none;
+      border-color: #ff6d35;
+      background: #ffece0;
+    }
+  }
+}
+
+.form__select {
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  color: $color;
+  @include border;
+
+  &_width_m {
+    width: 20rem;
+  }
+}
+
+.form__fieldset {
+  display: inline-block;
+  @include border;
+}
+
+.form__fieldset-group {
+  margin: 0.5rem 0;
+  padding: 0 0.8rem;
+}
+
+.form__text-block {
+  display: inline-block;
+  padding: .3rem .6rem;
+  @include border;
+  background: #ebebe4;
+}
+
+.form__text {
+  font-weight: bold;
+}
+
+.form__table {
+  display: table;
+  width: 100%;
+}
+
+.form__cell {
+  display: table-cell;
+  vertical-align: middle;
+
+  &_width_max {
+    width: 100%;
+  }
+  &_padding-left {
+    padding-left: 0.3rem;
+  }
+}
+
+.form__cell-with-button {
+  width: 8.5rem;
+  text-align: right;
+}
+
+.form__button {
+  padding: 0.3rem 1rem;
+}
+
+.form__icon-block {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 1.9rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  background: #444;
+  color: #ffffff;
+  font-size: 1.1rem;
+  @include border;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 300px;
+  @include border;
+}
+
+.form__group_checkbox {
+  padding: 0 0.8rem;
+}
+
+.form__checkbox {
+  margin-right: 0.3rem;
+  vertical-align: middle;
+  transform: scale(1.3);
+  opacity: 0.85;
+  cursor: pointer;
+}

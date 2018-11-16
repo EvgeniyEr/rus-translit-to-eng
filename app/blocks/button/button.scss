@@ -1,0 +1,51 @@
+$border-radius: 0.25rem !default;
+$color-dark: #41424c !default;
+
+.button {
+  display: inline-block;
+  outline: 0;
+  white-space: nowrap;
+  border-radius: $border-radius;
+  border: 1px solid #9ba0af;
+  @include gradient;
+
+  &:hover {
+    @include gradient-hover;
+    border-color: #929292;
+  }
+  &_disabled {
+    background: #efefef !important;
+    background-image: none !important;
+    border-color: #a9aebd !important;
+  }
+}
+
+.button__icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  line-height: 1.7rem;
+  height: 1.7rem;
+
+  &_color_b {
+    color: #1a82b7;
+  }
+  &_color_g {
+    color: #005e00;
+  }
+  &_color_r {
+    color: #e00000;
+  }
+  &_disabled {
+    color: #7d7f8c;
+  }
+}
+
+.button__text {
+  padding-left: 0.2rem;
+  vertical-align: middle;
+  color: $color-dark;
+
+  &_disabled {
+    color: #7d7f8c;
+  }
+}

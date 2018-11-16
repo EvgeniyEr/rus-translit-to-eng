@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример транслитерации русского текста в английский</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+<div class="page__wrap-form">
+    <form class="form" action="/admin/page" method="post">
+        <div class="form__group">
+            <div class="form__label-group">
+                <label class="form__label" for="page-title">Название страницы:</label>
+            </div>
+            <input id="page-title" class="form__input input-page-title" type="text" name="page[title]">
+        </div>
+        <div class="form__group">
+            <div class="form__label-group form__cell">
+                <label class="form__label" for="page-url">URL:</label>
+            </div>
+            <div class="form__table">
+                <div class="form__cell">
+                    <input id="page-url" class="form__input input-page-url" type="text" name="page[url]">
+                </div>
+                <div class="form__cell form__cell-with-button">
+                    <button class="button btn-url-generation" type="button" name="generate-url">
+                        <span class="button__icon button__icon_color_b icon-a-generate"></span>
+                        <span class="button__text">Генерировать</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+<!-- build:js -->
+<script src="/js/helper.js" defer></script>
+<script src="/js/btn-url-generation.js" defer></script>
+<script src="/js/input-page-url.js" defer></script>
+<!-- endbuild -->
+
+</body>
+</html>
