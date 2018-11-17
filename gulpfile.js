@@ -79,7 +79,7 @@ gulp.task('html', function () {
         .pipe(gulpif(argv.prod, htmlreplace({
             js: {
                 src : null, // Отсутствуют подстановки в шаблон tpl
-                tpl: '<script src="/js/bundle.min.js" defer></script>'
+                tpl: '<script src="js/bundle.min.js" defer></script>'
             }
         })))
         .pipe(gulp.dest('build/')); //Выгружаем результата в папку build/

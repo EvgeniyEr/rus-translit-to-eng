@@ -4,7 +4,8 @@ var helper = {
     /**
      * Выполняет транслитерацию русского текста в английский для Яндекс-поисковика.
      * Правила транслитерации русских букв: https://yandex.ru/support/nmaps/app_transliteration.html
-     * Дополнительные проблемы: https://yandex.ru/blog/narod-karta/dopolnenie-k-pravilam-transliteratsii-russkikh-bukv
+     * Дополнительные проблемы, которые пока не добавлены в правила:
+     * https://yandex.ru/blog/narod-karta/dopolnenie-k-pravilam-transliteratsii-russkikh-bukv
      *
      * Слова по умолчанию разделяются символом '-' и выводятся в нижнем регистре.
      *
